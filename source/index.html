@@ -27,11 +27,13 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="cover__wrapper">
-        <h1 class="cover__title">Функциональное питание для котов</h1>
-        <p class="cover__slogan">Занялся собой? Займись котом!</p>
-        <img class="cover__image" src="img/main-product.png" width="280" height="270" alt="Упаковка Cat Energy PRO">
-        <a class="cover__button" href="form.html">Подобрать программу</a>
+      <div class="cover">
+        <div class="cover__wrapper">
+          <h1 class="cover__title">Функциональное питание для котов</h1>
+          <p class="cover__slogan">Занялся собой? Займись котом!</p>
+          <img class="cover__image" src="img/main-product.png" width="280" height="270" alt="Упаковка Cat Energy PRO">
+          <a class="cover__button button button--primary" href="form.html">Подобрать программу</a>
+        </div>
       </div>
       <section class="programs">
         <h2 class="visually-hidden">Список программ</h2>
@@ -54,16 +56,16 @@
         <div class="advantages__wrapper">
           <h2 class="advantages__title">Как это работает</h2>
           <ol class="advantages__list">
-            <li class="advantages__item--components">
+            <li class="advantages__item advantages__item--components">
               <p class="advantages__text">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
-            <li class="advantages__item--structure">
+            <li class="advantages__item advantages__item--structure">
               <p class="advantages__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="advantages__item--ration">
+            <li class="advantages__item advantages__item--ration">
               <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
-            <li class="advantages__item--time">
+            <li class="advantages__item advantages__item--time">
               <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ol>
@@ -90,13 +92,13 @@
           <p class="example__total">Затраты на питание:<span>15 000 РУБ.</span></p>
         </div>
         <div class="example__demonstration">
-          <img class="example__img--before" src="img/cat-before.png" width="280" height="232" alt="Кот Борис до начала программы">
-          <img class="example__img--after" src="img/cat-after.png" width="243" height="232" alt="Кот Борис после завершения программы">
-          <div class="range-toggle">
-            <span class="range-toggle__label">было</span>
-            <button class="range-toggle__before" type="button"></button>
-            <button class="range-toggle__after" type="button"></button>
-            <span class="range-toggle__label">стало</span>
+          <img class="example__img example__img--before" src="img/cat-before.png" width="280" height="232" alt="Кот Борис до начала программы">
+          <img class="example__img example__img--after" src="img/cat-after.png" width="243" height="232" alt="Кот Борис после завершения программы">
+          <div class="comparison-toggle">
+            <span class="comparison-toggle__label">было</span>
+            <button class="comparisons__button" type="button" aria-label="Переместите ползунок, чтобы увидеть разницу"></button>
+            <span class="comparison-toggle__indicator"></span>
+            <span class="comparison-toggle__label">стало</span>
           </div>
         </div>
       </section>
@@ -107,9 +109,7 @@
             <p class="adress__subtitle">Приглашаем к сотрудничеству дилеров!</p>
             <p class="adress__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <a class="adress__link">
-            <img class="adress__map" src="img/location.png" width="320" height="362" alt="Карта офиса по адресу улица Большая Конюшенная, д. 19/8">
-          </a>
+          <iframe class="adress__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716344798!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1638652639479!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
       <footer class="page-footer">
